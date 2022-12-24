@@ -10,26 +10,26 @@ const ContactForm = React.forwardRef((_, ref) => {
       <div className={styles.wrapper}>
         <div className={styles.field}>
           <label htmlFor="name">
-            Name
+            Your name
           </label>
           <input id="name" type="text" name="name" required />
-          <ValidationError prefix="Name" field="name" errors={state.errors} className={styles.error} />
+          <ValidationError prefix="Your name" field="name" errors={state.errors} className={styles.error} />
         </div>
 
         <div className={styles.field}>
           <label htmlFor="email">
-            Email Address
+            Your email address
           </label>
           <input id="email" type="email" name="email" required />
-          <ValidationError prefix="Email Address" field="email" errors={state.errors} className={styles.error} />
+          <ValidationError prefix="Your email address" field="email" errors={state.errors} className={styles.error} />
         </div>
 
         <div className={styles.field}>
           <label htmlFor="message">
-            Message
+            Your message
           </label>
           <textarea id="message" name="message" required></textarea>
-          <ValidationError prefix="Message" field="message" errors={state.errors} className={styles.error} />
+          <ValidationError prefix="Your message" field="message" errors={state.errors} className={styles.error} />
         </div>
 
         <div className={`${styles.field} ${styles.submit}`}>

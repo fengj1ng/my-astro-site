@@ -1,27 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header";
+import {Content as Intro} from '../markdown/intro.md';
 ---
 
 <BaseLayout title="Welcome.">
   <Header client:load />
   <main>
-    <article class="bio">
-      <p>
-        There were once great floods throughout the lands of ancient China, causing widespread disaster. Many efforts were made to suppress and contain these floods, but to no avail. It was finally the Great Yu (大禹) who succeeded by opening up channels and freeing the waters instead of damming them like before. With newly irrigated lands and crops, the people flourished thereafter. Likewise, my aim is to control the floods of our current times through facilitation rather than obstruction.
-      </p>
-      <p>
-        It's less of a noble undertaking and more like a personal motto. Floods can symbolize anything material or abstract that is chaotic or pent up, and to control these floods would mean to organize and manipulate these things in some way to increase flow, motion, and therefore liveliness. In a general sense, my mission is to organize material in order to inspire others.
-      </p>
-      <p>
-        What floods exist in our current times? What things should I work with to generate inspiration? These are the questions I'm trying to answer as I navigate our complex world.
-      </p>
-      <p>
-        In the meantime, I've explored many fields from the sciences to the arts. I graduated from the University of Michigan with a bachelor's degree where I studied computer science, music, physics, and complex systems. Some of my favorite classes include organic chemistry with Prof. Brian Coppola, network theory with Prof. Mark Newman, and an introduction to complex systems with Prof. Abigail Jacobs. I sang in the University of Michigan Men's Glee Club and made a few things at Shift Creator Space. I was also fortunate to study conducting privately with Kenneth Kiesler.
-      </p>
-      <p>
-        Currently, I'm a software engineer in the Puget Sound region at Amazon Inc. I now sing with Seattle Pro Musica and the Seattle Symphony Chorale and conduct the Amazon Symphony Orchestra. Outside of everything, I like to eat good food, play piano, and stay active by mostly playing basketball!
-      </p>
+    <article class="intro">
+      <Intro />
     </article>
   </main>
 </BaseLayout>
@@ -30,7 +17,7 @@ import Header from "../components/Header";
   main {
     padding: 0 24px;
   }
-  .bio {
+  .intro {
     max-width: 720px;
     margin: 0 auto;
   }

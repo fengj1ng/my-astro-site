@@ -1,8 +1,8 @@
 .container {
   padding: 0 24px;
 }
-.wrapper {
-  max-width: 720px;
+.nav {
+  max-width: 960px;
   margin: 0 auto;
 
   display: flex;
@@ -13,34 +13,26 @@
 .name, .contact {
   margin: 12px 0;
 
-  font-weight: bold;
 }
 .name {
   font-size: 1.5rem;
+  font-weight: bold;
+}
+.contact {
+  font-size: 1.1rem;
 }
 
 .enter {
-  max-height: 0;
   opacity: 0;
 }
 .enterActive {
-  transition: opacity .5s ease .25s, max-height 2s;
-  max-height: 1000px;
-  opacity: 1;
-}
-.exit {
-  max-height: 1000px;
+  transition: opacity .2s;
   opacity: 1;
 }
 .exitActive {
-  transition: opacity .375s, max-height .7s;
-  max-height: 0;
+  transition: opacity .2s;
   opacity: 0;
 }
-.exitActive * {
-  transition: margin .325s ease .375s, padding .325s ease .375s;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+.exitDone {
+  height: 0;
 }

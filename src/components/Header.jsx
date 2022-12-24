@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className={styles.container}>
-      <nav className={styles.wrapper}>
+      <nav className={styles.nav}>
         <div className={styles.name}>
           <a href="/">
             风劲
@@ -28,7 +28,7 @@ export default function Header() {
           Contact me
         </div>
       </nav>
-      <CSSTransition nodeRef={nodeRef} in={showContactForm} timeout={2000} unmountOnExit classNames={classNames}>
+      <CSSTransition nodeRef={nodeRef} in={showContactForm} timeout={200} unmountOnExit classNames={classNames}>
         <ContactForm ref={nodeRef} />
       </CSSTransition>
     </header>
