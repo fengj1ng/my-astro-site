@@ -42,7 +42,7 @@ const { title } = Astro.props;
 		border-bottom: 0.1em solid rgba(0, 0, 255, 0.7);
 		transition: padding-bottom 100ms, border-color 100ms;
 	}
-	a:hover {
+	a:active {
 		border-color: rgba(0, 0, 0, 0.3);
 	}
 	.switch {
@@ -55,7 +55,15 @@ const { title } = Astro.props;
 	.switch.off {
 		border-color: rgba(0, 0, 0, 0.3);
 	}
-	.switch.on, .switch.off:hover {
+	.switch.on, .switch.off:active {
 		border-color: rgba(255, 0, 0, 0.7);
+	}
+	@media (hover: hover) {
+		a:hover { 
+			border-color: rgba(0, 0, 0, 0.3);
+		}
+		.switch.off:hover {
+			border-color: rgba(255, 0, 0, 0.7);
+		}
 	}
 </style>
